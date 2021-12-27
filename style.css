@@ -12,12 +12,12 @@
 
 .container-lg {
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1024px;
 }
 
 .container-sm {
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 900px;
 }
 
 a {
@@ -30,7 +30,9 @@ a {
 header .row#nav {
     position: absolute;
     top: 0;
-    width: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1024px;
     color: white;
 }
 
@@ -52,7 +54,7 @@ header .col.menu-nav {
     width: calc(100% - 125px - 125px);
 }
 
-/* STILE MENU NAV */
+/* MENU NAV */
 header .menu-nav > ul {
     text-align: center;
     padding: 0 50px;
@@ -81,6 +83,15 @@ header .login {
     border: 1px solid black;
 }
 
+.lilac-button {
+    background-color: #7983F5;
+}
+
+.black-button {
+    background-color: black;
+    color: white;
+}
+
 header .col.login a {
     color: black;
 }
@@ -107,8 +118,13 @@ main #jumbo #jumbo-desc {
 }
 
 /* sezioni */
-main .content .container-sm .row [class^="col"] {
+main .content .container-sm .row [class^="col-"] {
     float: left;
+}
+
+.content .row {
+    padding-top: 120px;
+    padding-bottom: 100px;
 }
 
 .col-8 {
@@ -129,7 +145,17 @@ main .content .container-sm .row [class^="col"] {
     padding: 7px;
 }
 
+.col-12 {
+    width: 100%;
+}
 
+.content .container-sm .col-12 {
+    text-align: center;
+}
+
+.content .container-sm .col-12 > .title-cta {
+    font-size: 29px;
+}
 
 
 
@@ -137,7 +163,7 @@ main .content .container-sm .row [class^="col"] {
 
 /* DEBUG */
 .debug header .container-lg > .row {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     /* background-color: bisque; */
 }
 
@@ -175,6 +201,4 @@ main .content .container-sm .row [class^="col"] {
 
 .debug .content .row {
     /* border: 1px solid yellowgreen; */
-    padding-top: 120px;
-    padding-bottom: 100px;
 }
