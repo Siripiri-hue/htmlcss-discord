@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Mukta', sans-serif;
-    font-size: 15px;    
+    font-size: 15px; 
 }
 
 img {
@@ -19,20 +19,16 @@ img {
 
 a {
     text-decoration: none;
-    color: white;
+    color: currentColor;
 }
 
     /*  HEADER */
-header .container { 
-    padding: 12px 0;
-    position: absolute;
+
+header .row#nav {
+    position: fixed;
     top: 0;
-    left: 20%;
-}
-header .container-img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
+    width: 80%;
+    color: white;
 }
 
 header .row#nav [class^="col"] {
@@ -79,10 +75,32 @@ header .login {
     color: black;
     border-radius: 16px;
     padding: 5px 10px;
+    border: 1px solid black;
 }
 
 header .col.login a {
     color: black;
+}
+
+    /* MAIN */
+/* jumbo section */
+main #jumbo {
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    background-image: url("img/jumbo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+main #jumbo #title {
+    font-size: 60px;
+}
+
+main #jumbo #jumbo-desc {
+    font-size: 20px;
+    padding: 15px 100px;
 }
 
 
@@ -102,4 +120,8 @@ header .col.login a {
 
 .debug header .col.login {
     border: 1px solid black;
+} */
+
+/* .debug main #jumbo {
+    border: 1px solid red;
 } */
