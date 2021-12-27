@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mukta', sans-serif;
+    /* font-family: 'Mukta', sans-serif; */
+    font-family: 'Rubik', sans-serif;
     font-size: 15px; 
 }
 
-img {
-    width: 100%;
+.container-lg {
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
-.container {
+.container-sm {
     margin: 0 auto;
     max-width: 1024px;
 }
@@ -25,9 +28,9 @@ a {
     /*  HEADER */
 
 header .row#nav {
-    position: fixed;
+    position: absolute;
     top: 0;
-    width: 80%;
+    width: 75%;
     color: white;
 }
 
@@ -100,13 +103,41 @@ main #jumbo #title {
 
 main #jumbo #jumbo-desc {
     font-size: 20px;
-    padding: 15px 100px;
+    padding: 10px 100px 30px;
+}
+
+/* sezioni */
+main .content .container-sm .row [class^="col"] {
+    float: left;
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8); 
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.content .content-title {
+    font-size: 40px;
+    padding: 7px;
+}
+
+.content .content-desc {
+    font-size: 20px;
+    padding: 7px;
 }
 
 
+
+
+
+
+
 /* DEBUG */
-.debug header .container > .row {
-    /* border: 2px solid black; */
+.debug header .container-lg > .row {
+    border: 2px solid black;
     /* background-color: bisque; */
 }
 
@@ -124,4 +155,26 @@ main #jumbo #jumbo-desc {
 
 /* .debug main #jumbo {
     border: 1px solid red;
+}
+
+.debug .content .content-title {
+    border: 1px solid navy;
+}
+
+.debug .content .content-desc {
+    border: 1px solid orange;
+}
+
+.debug .content .content-img {
+    border: 1px solid green;
+}
+
+.debug .content {
+    border: 1px solid slateblue;
 } */
+
+.debug .content .row {
+    /* border: 1px solid yellowgreen; */
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
