@@ -193,6 +193,20 @@ footer .row:first-child {
     padding-bottom: 15px;
 }
 
+footer .container-sm .row .list-title {
+    color:#5865F2;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+footer .list-title#bigtitle {
+    font-size: 35px;
+}
+
+footer .container-sm .row .foot-lists li {
+    padding-bottom: 10px;
+}
+
 footer .row:last-child {
     padding-top: 20px;
 }
@@ -203,6 +217,11 @@ footer .container-sm .row:last-child > .col-6:last-child {
     text-align: right;
 }
 
+footer .icons li {
+    padding-right: 7px;
+    padding-top: 10px;
+    display: inline-block;
+}
 /* DEBUG */
 /* .debug header .container-lg > .row {
     border: 2px solid black;

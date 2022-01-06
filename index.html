@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
 </head>
 <body class="debug">
 
@@ -37,6 +38,7 @@
     </header>
 
     <main>
+        <!-- sezione jumbo -->
         <section id="jumbo">
             <div class="container-sm">
                 <h1 id="title">Il tuo posto per parlare</h1>
@@ -50,6 +52,7 @@
             </div>
         </section>
 
+        <!-- prima sezione contenuti -->
         <section class="content">
             <div class="container-sm">
                 <div class="row">
@@ -64,6 +67,7 @@
             </div>
         </section>
 
+        <!-- seconda sezione contenuti -->
         <section class="content">
             <div class="container-sm">
                 <div class="row">
@@ -78,6 +82,7 @@
             </div>
         </section>
 
+        <!-- terza sezione contenuti -->
         <section class="content">
             <div class="container-sm">
                 <div class="row">
@@ -92,6 +97,7 @@
             </div>
         </section>
 
+        <!-- quarta sezione contenuti -->
         <section class="content">
             <div class="container-sm">
                 <div class="row">
@@ -115,15 +121,28 @@
 
     <footer>
         <div class="container-sm">
+            <!-- riga con tutte le liste -->
             <div class="row">
                 <div class="col-4">
-                    <h3 class="list-title">Il tuo posto per parlare</h3>
+                    <h3 class="list-title" id="bigtitle">Il tuo posto per parlare</h3>
                     <!-- menu a tendina lingua -->
+                    <form>
+                        <select name="" id="">
+                            <option value="">Italiano</option>
+                        </select>
+                    </form>
                     <!-- icone -->
+                    <ul class="icons">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
                 </div>
+                <!-- liste -->
                 <div class="col-2">
                     <h3 class="list-title">Prodotto</h3>
-                    <ul>
+                    <ul class="foot-lists">
                         <li><a href="#">Lorem.</a></li>
                         <li><a href="#">Lorem.</a></li>
                         <li><a href="#">Lorem.</a></li>
@@ -134,7 +153,7 @@
                 </div>
                 <div class="col-2">
                     <h3 class="list-title">Compagnia</h3>
-                    <ul>
+                    <ul class="foot-lists">
                         <li><a href="#">Lorem.</a></li>
                         <li><a href="#">Lorem.</a></li>
                         <li><a href="#">Lorem.</a></li>
@@ -144,7 +163,7 @@
                 </div>
                 <div class="col-2">
                     <h3 class="list-title">Risorse</h3>
-                    <ul>
+                    <ul class="foot-lists">
                         <li><a href="#">Lorem.</a></li>
                         <li><a href="#">Lorem.</a></li>
                         <li><a href="#">Lorem.</a></li>
@@ -160,7 +179,7 @@
                 </div>
                 <div class="col-2">
                     <h3 class="list-title">Norme</h3>
-                    <ul>
+                    <ul class="foot-lists">
                         <li><a href="#">Lorem.</a></li>
                         <li><a href="#">Lorem.</a></li>
                         <li><a href="#">Lorem.</a></li>
@@ -169,6 +188,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- riga sotto la linea decorativa -->
             <div class="row">
                 <div class="col-6">
                     <img src="img/logo.svg">
