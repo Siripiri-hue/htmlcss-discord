@@ -149,6 +149,10 @@ main #jumbo #jumbo-desc {
 
 /* sezioni */
 
+/* .content {
+    position: relative;
+} */
+
 .content .row {
     padding-top: 120px;
     padding-bottom: 100px;
@@ -175,6 +179,30 @@ main #jumbo #jumbo-desc {
 .content .container-sm .col-12 > .title-cta {
     font-size: 29px;
     padding-bottom: 25px;
+}
+
+.gray-bckgrnd {
+    background-color: rgb(226, 226, 226);
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    height: 60px;
+    width: 100%;
+    color: rgb(226, 226, 226);
+}
+
+.wave-bottom {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 60px;
+    width: 100%;
+    color: rgb(226, 226, 226); 
+    transform: rotate(180deg);
 }
 
     /* FOOTER */
